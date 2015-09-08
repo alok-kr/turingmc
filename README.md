@@ -16,11 +16,11 @@ Turing Machine
 
 -- Project Structure --
 
-main.c			- Main File
-	turing.h		- Header file define turing machine
-	tape.h			- Header file define tape stucture
-	dlist.h			- Header file defines double-linked list structure and operations
-	util.h			- Header file for other functions
+	main.c			- Main File
+		turing.h		- Header file define turing machine
+		tape.h			- Header file define tape stucture
+		dlist.h			- Header file defines double-linked list structure and operations
+		util.h			- Header file for other functions
 
 	anbncn.tm	- Example turing machine config file
 	output.txt	- Output of anbncn.tm
