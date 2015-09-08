@@ -1,0 +1,47 @@
+turing {
+	tape {
+		data {
+			headpos : integer
+			list {
+				data : string
+				next : (ptr)
+				previous : (ptr)
+			}
+		}
+		next : (ptr)
+		previous : (ptr)
+	}
+	tapeNum : integer
+	currState : string
+	initialState : string
+	finalStates {
+		data : string
+		next : (ptr)
+		previous : (ptr)
+	}
+	alphabets {
+		data : string
+		next : (ptr)
+		previous : (ptr)
+	}
+	states {
+		data : string
+		next : (ptr)
+		previous : (ptr)
+	}
+	numFinalStates : integer
+	numAlphabets : integer
+	numStates : integer
+	transitionTable {
+		data {
+			inState : string
+			tape : string
+			outState : string
+			newTape : string
+			tapeDirection : string
+		}
+		next : (ptr)
+		previous : (ptr)
+	}
+	numTransition : integer
+}
