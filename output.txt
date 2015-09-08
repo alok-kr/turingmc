@@ -1,0 +1,126 @@
+
+Reading Config...		[COMPLETED]
+
+--- Turing Machine Configuration ---
+
+Initial State : q0
+All States    : {q0, q1, q2, q3, q4}
+Final States  : {q3}
+Alphabets     : {a, b, c}
+Transitions   : 
+        d(q0,a,#,#) = (q0, {a,R}, {a,R}, {#,S})
+        d(q0,b,#,#) = (q1, {b,R}, {#,S}, {b,R})
+        d(q0,#,#,#) = (q4, {#,S}, {#,L}, {#,S})
+        d(q1,b,#,#) = (q1, {b,R}, {#,S}, {b,R})
+        d(q1,c,#,#) = (q2, {c,S}, {#,L}, {#,L})
+        d(q2,c,a,b) = (q2, {c,R}, {a,L}, {b,L})
+        d(q2,#,#,#) = (q3, {#,S}, {#,S}, {#,S})
+        d(q4,#,#,#) = (q3, {#,S}, {#,S}, {#,S})
+Blank Char    : #
+
+
+Step : 000, Current State : q0, Machine State : 0
+__________aaabbbccc__
+          ^
+_____________________
+          ^
+_____________________
+          ^
+
+Step : 001, Current State : q0, Machine State : 0
+_________aaabbbccc___
+          ^
+_________a___________
+          ^
+_____________________
+          ^
+
+Step : 002, Current State : q0, Machine State : 0
+________aaabbbccc____
+          ^
+________aa___________
+          ^
+_____________________
+          ^
+
+Step : 003, Current State : q0, Machine State : 0
+_______aaabbbccc_____
+          ^
+_______aaa___________
+          ^
+_____________________
+          ^
+
+Step : 004, Current State : q1, Machine State : 0
+______aaabbbccc______
+          ^
+_______aaa___________
+          ^
+_________b___________
+          ^
+
+Step : 005, Current State : q1, Machine State : 0
+_____aaabbbccc_______
+          ^
+_______aaa___________
+          ^
+________bb___________
+          ^
+
+Step : 006, Current State : q1, Machine State : 0
+____aaabbbccc________
+          ^
+_______aaa___________
+          ^
+_______bbb___________
+          ^
+
+Step : 007, Current State : q2, Machine State : 0
+____aaabbbccc________
+          ^
+________aaa__________
+          ^
+________bbb__________
+          ^
+
+Step : 008, Current State : q2, Machine State : 0
+___aaabbbccc_________
+          ^
+_________aaa_________
+          ^
+_________bbb_________
+          ^
+
+Step : 009, Current State : q2, Machine State : 0
+__aaabbbccc__________
+          ^
+__________aaa________
+          ^
+__________bbb________
+          ^
+
+Step : 010, Current State : q2, Machine State : 0
+_aaabbbccc___________
+          ^
+___________aaa_______
+          ^
+___________bbb_______
+          ^
+
+Step : 011, Current State : q3, Machine State : 0
+_aaabbbccc___________
+          ^
+___________aaa_______
+          ^
+___________bbb_______
+          ^
+Step : 012, Current State : q3, Machine State : 1
+_aaabbbccc___________
+          ^
+___________aaa_______
+          ^
+___________bbb_______
+          ^
+
+Machine halted
+

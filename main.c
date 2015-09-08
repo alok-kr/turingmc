@@ -14,7 +14,7 @@ int main() {
 	printTuringConf(mymc);
 	
 	/* Load tape with string */
-	char str[22] = "aabbcc";
+	char str[22] = "aaabbbccc";
 	loadString((struct tape *)(mymc->tapes->data), str);
 
 	/* Run machine */
